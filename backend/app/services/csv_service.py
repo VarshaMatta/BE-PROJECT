@@ -49,7 +49,10 @@ class CSVService:
             elif col_clean in ["promo", "promotion", "discountflag", "offer"]:
                 suggested_mapping[col] = "promotion"
 
-        preview_data = df.head(5).to_dict(orient="records")
+        # Sanitize NaN values for clean JSON serialization
+        df_clean = df.fillna("")
+        preview_data = df_clean.head(5).to_dict(orient="records")
+        
         return {
             "filename": filename,
             "total_columns": len(columns),
