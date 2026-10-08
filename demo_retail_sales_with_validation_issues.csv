@@ -1,0 +1,12 @@
+Item_Code,Sale_Date,Units,Rate,Promo,Category
+MLK101,2024-01-01,15,64.00,None,Dairy
+MLK101,2024-01-01,15,64.00,None,Dairy
+MLK101,2024-01-05,18,64.00,None,Dairy
+MLK101,2024-01-10,12,,Discount,Dairy
+MLK101,2024-01-15,-5,60.00,Discount,Dairy
+BRD202,2024-01-02,30,35.00,None,Bakery
+BRD202,2024-01-02,30,35.00,None,Bakery
+BRD202,invalid-date,25,38.00,None,Bakery
+BIS303,2024-01-03,50,20.00,None,Snacks
+BIS303,2024-01-08,45,20.00,None,Snacks
+JUC404,2024-01-04,10,45.00,None,Beverage
